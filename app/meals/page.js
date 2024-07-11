@@ -5,6 +5,11 @@ import Link from "next/link";
 import { Suspense } from "react";
 import MealsLoadingPage from "./loading-out";
 
+export const metadata = {
+  title: "All Meals",
+  description: "Browse meals",
+};
+
 const Meals = async () => {
   const meals = await getMeals();
 
